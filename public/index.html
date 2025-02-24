@@ -3,25 +3,42 @@
   <head>
     <meta charset="utf-8">
     <title>Home page</title>
-    <meta name="author" content="ATLMendoza">
+    <meta name="author" content="JBSAquino">
     <meta name="description" content="form tag and the form elements">
     <meta name="keywords" content="form, submit, reset, input, button, textarea, fieldset, legend">
-    <meta name="revised" content="02/16/2025"/>
+    <meta name="revised" content="02/25/2025"/>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
      <header>
        <h1>
-        Sample form implementation
+        PHSS-CMM Club Preference Form
       </h1>
+
+       <h4>
+         For students of the Philippine High School of Sciences - Campus of Metro Manila
+       </h4>
 
     </header>
     <form id="login" method="post" action="submit"
           onsubmit="return confirm('Accept Input')"
           onreset="return confirm('You really want it clear?')">
           <fieldset>
-            <legend>Things About Yourself: </legend>
-              
+            <legend>Personal Information:</legend>
+            <!-- (Note) s: student ; c: club -->
+            <!-- (1) sID , numeric -->
+            <label for="userName">Student ID:</label>
+            <input onblur="toUpper(this)" type="number" id="sID" name="sID"
+                   placeholder="LN, FN MI" required/>
+            <!-- (2) sName , text -->
+            <label for="userName">Name:</label>
+            <input onblur="toUpper(this)" type="text" id="sName" name="sName"
+                   placeholder="LN, FN MI" required/>
+            <!-- (3) sBirthday , date -->
+            <label for="userName">Name:</label>
+            <input onblur="toUpper(this)" type="date" id="sBirthday" name="sBirthday"
+                   placeholder="LN, FN MI" required/>
+            
             <label>Title: 
               <select id="utitle" name="utitle">
                 <optgroup label="Everyday">
@@ -35,11 +52,7 @@
                   <option value="Engr'"> Engr.</option>   
                 </optgroup>
               </select>
-        
-            </label>  
-            <label for="userName">Name:</label>
-            <input onblur="toUpper(this)" type="text" id="userName" name="userName"
-                   placeholder="LN, FN MI" required/>
+            </label> 
               
             <label>Password: <input type="password" id="pword" name="pword"/> </label>  
             <br/><br/>
