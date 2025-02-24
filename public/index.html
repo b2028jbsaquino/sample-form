@@ -30,19 +30,24 @@
             <label for="userName">Student ID:</label>
             <input onblur="toUpper(this)" type="number" id="sID" name="sID"
                    placeholder="LN, FN MI" required/>
+            <br/>
             <!-- (2) sName , text -->
             <label for="userName">Name:</label>
             <input onblur="toUpper(this)" type="text" id="sName" name="sName"
                    placeholder="LN, FN MI" required/>
+            <br/>
             <!-- (3) sBirthday , date -->
             <label for="userName">Birthday:</label>
             <input onblur="toUpper(this)" type="date" id="sBirthday" name="sBirthday" required/>
+            <br/>
             <!-- (4) sEmail , email -->
             <label>Email: <input type="email" id="uemail" name="uemail"/> </label>  
+            <br/>
             <!-- (5) sPhoneNo , text -->
             <label for="userName">Mobile #:</label>
             <input onblur="toUpper(this)" type="text" id="sPhoneNo" name="sPhoneNo"
                    placeholder="0XXX XXX XXXX" required/>
+            <br/>
             <!-- (6) sGradeLevel , dropdown -->
             <label>Grade Level: 
               <select id="sGradeLevel" name="sGradeLevel">
@@ -56,11 +61,13 @@
                 </optgroup>
               </select>
             </label> 
+            <br/>
             <!-- (7) sResidency , radio -->
             <label>Residency: 
               <input type="radio" name="sResidency" value="I"/> Intern
               <input type="radio" name="sResidency" value="E"/> Extern
             </label>
+            <br/>
             <!-- (8) cPreferred , 5 item dropdown -->
             <label>Preferred Club: 
               <select id="cPreferred" name="cPreferred">
@@ -73,6 +80,7 @@
                 </optgroup>
               </select>
             </label> 
+            <br/>
             <!-- (9) cReason , textarea -->
             <label for="cReason">Why do you want to join your preferred club?<br/>
               <textarea id="cReason" name="cReason" rows="10" cols="50">
