@@ -24,7 +24,7 @@
           onsubmit="return confirm('Accept Input')"
           onreset="return confirm('You really want it clear?')">
           <fieldset>
-            <legend>Personal Information:</legend>
+            <legend>Personal Information</legend>
             <!-- (Note) s: student ; c: club -->
             <!-- (1) sID , numeric -->
             <label for="userName">Student ID:</label>
@@ -38,8 +38,7 @@
             <label for="userName">Birthday:</label>
             <input onblur="toUpper(this)" type="date" id="sBirthday" name="sBirthday" required/>
             <!-- (4) sEmail , email -->
-            <label for="userName">Email Address:</label>
-            <input onblur="toUpper(this)" type="date" id="sEmail" name="sEmail" required/>
+            <label>Email: <input type="email" id="uemail" name="uemail"/> </label>  
             <!-- (5) sPhoneNo , text -->
             <label for="userName">Mobile #:</label>
             <input onblur="toUpper(this)" type="text" id="sPhoneNo" name="sPhoneNo"
@@ -58,37 +57,29 @@
               </select>
             </label> 
             <!-- (7) sResidency , radio -->
-            <input type="radio" id="intern" name="sResidency" value="I">
-            <label for="I">Intern</label><br>
-            <input type="radio" id="extern" name="sResidency" value="E">
-            <label for="E">Extern</label><br>
-            <!-- (8) -->
-            
-            <label>Password: <input type="password" id="pword" name="pword"/> </label>  
-            <br/><br/>
-        
-            <label>Gender: 
-              <input type="radio" name="gender" value="f"/> Female
-              <input type="radio" name="gender" value="m"/> Male
-              <input type="radio" name="gender" value="p" checked/> Prefer Not to Say
-            </label>  
-            <br/><br/>
-            <label>Talents: 
-              <input type="checkbox" name="talent" value="d" /> Dance
-              <input type="checkbox" name="talent" value="s" /> Sing
-              <input type="checkbox" name="talent" value="p" /> Play An Instrument
-            </label>  
-            <br/><br/>
-        
-            <label>Email: <input type="email" id="uemail" name="uemail"/> </label>  
-        
-            <label>Your website: <input type="url" id="uweb" name="uweb"/> </label>  
-            <br/><br/>
-        
-            <label>Description:<br/> 
-              <textarea id="desc" name="desc" rows="10" cols="50"> 
+            <label>Residency: 
+              <input type="radio" name="sResidency" value="I"/> Intern
+              <input type="radio" name="sResidency" value="E"/> Extern
+            </label>
+            <!-- (8) cPreferred , 5 item dropdown -->
+            <label>Preferred Club: 
+              <select id="cPreferred" name="cPreferred">
+                <optgroup>
+                  <option value="AKSIS">AKSIS (Aksyon, Iskolar!) - Social Action</option>
+                  <option value="Himig Agham">Himig Agham - Glee</option>
+                  <option value="Likha">Likha - Art</option>
+                  <option value="PHSS-MUN">PHSS-MUN - Model United Nations</option>
+                  <option value="Sagala">Sagala (Sayaw Galaw) - Dance</option>
+                </optgroup>
+              </select>
+            </label> 
+            <!-- (9) cReason , textarea -->
+            <label for="cReason">Why do you want to join your preferred club?<br/>
+              <textarea id="cReason" name="cReason" rows="10" cols="50">
+              What does being in the club mean to you? What can you learn? What can you provide?
               </textarea>
-            </label>  
+            </label>
+            <!-- (10) Submit / reset buttons -->
             <br><br>
             <input type="submit" value="Submit"/>
 
