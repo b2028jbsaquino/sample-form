@@ -35,25 +35,35 @@
             <input onblur="toUpper(this)" type="text" id="sName" name="sName"
                    placeholder="LN, FN MI" required/>
             <!-- (3) sBirthday , date -->
-            <label for="userName">Name:</label>
-            <input onblur="toUpper(this)" type="date" id="sBirthday" name="sBirthday"
-                   placeholder="LN, FN MI" required/>
-            
-            <label>Title: 
-              <select id="utitle" name="utitle">
-                <optgroup label="Everyday">
-                  <option value="Ms"> Ms.</option>
-                  <option value="Mr"> Mr.</option>
-                  <option value="Mrs"> Mrs.</option>
-                </optgroup>
-                <optgroup label="professional title">
-                  <option value="Dr." selected> Dr.</option>
-                  <option value="Atty."> Atty.</option>
-                  <option value="Engr'"> Engr.</option>   
+            <label for="userName">Birthday:</label>
+            <input onblur="toUpper(this)" type="date" id="sBirthday" name="sBirthday" required/>
+            <!-- (4) sEmail , email -->
+            <label for="userName">Email Address:</label>
+            <input onblur="toUpper(this)" type="date" id="sEmail" name="sEmail" required/>
+            <!-- (5) sPhoneNo , text -->
+            <label for="userName">Mobile #:</label>
+            <input onblur="toUpper(this)" type="text" id="sPhoneNo" name="sPhoneNo"
+                   placeholder="0XXX XXX XXXX" required/>
+            <!-- (6) sGradeLevel , dropdown -->
+            <label>Grade Level: 
+              <select id="sGradeLevel" name="sGradeLevel">
+                <optgroup>
+                  <option value="7">Seven</option>
+                  <option value="8">Eight</option>
+                  <option value="8">Nine</option>
+                  <option value="8">Ten</option>
+                  <option value="8">Eleven</option>
+                  <option value="8">Twelve</option>
                 </optgroup>
               </select>
             </label> 
-              
+            <!-- (7) sResidency , radio -->
+            <input type="radio" id="intern" name="sResidency" value="I">
+            <label for="I">Intern</label><br>
+            <input type="radio" id="extern" name="sResidency" value="E">
+            <label for="E">Extern</label><br>
+            <!-- (8) -->
+            
             <label>Password: <input type="password" id="pword" name="pword"/> </label>  
             <br/><br/>
         
