@@ -28,21 +28,21 @@
             <!-- (Note) s: student ; c: club -->
             <!-- (1) sID , numeric -->
             <label for="userName">Student ID:</label>
-            <input onblur="toUpper(this)" type="number" id="sID" name="sID"
-                   placeholder="LN, FN MI" required/>
-            <br/>
+            <input onblur="toUpper(this)" type="number" id="sID" name="sID" required/>
             <!-- (2) sName , text -->
             <label for="userName">Name:</label>
             <input onblur="toUpper(this)" type="text" id="sName" name="sName"
                    placeholder="LN, FN MI" required/>
-            <br/>
             <!-- (3) sBirthday , date -->
             <label for="userName">Birthday:</label>
             <input onblur="toUpper(this)" type="date" id="sBirthday" name="sBirthday" required/>
             <br/>
             <!-- (4) sEmail , email -->
             <label>Email: <input type="email" id="uemail" name="uemail"/> </label>  
-            <br/>
+          </fieldset>
+          <br/>
+          <fieldset>
+            <legend>Contact Information</legend>
             <!-- (5) sPhoneNo , text -->
             <label for="userName">Mobile #:</label>
             <input onblur="toUpper(this)" type="text" id="sPhoneNo" name="sPhoneNo"
@@ -52,22 +52,20 @@
             <label>Grade Level: 
               <select id="sGradeLevel" name="sGradeLevel">
                 <optgroup>
-                  <option value="7">Seven</option>
-                  <option value="8">Eight</option>
-                  <option value="8">Nine</option>
-                  <option value="8">Ten</option>
-                  <option value="8">Eleven</option>
-                  <option value="8">Twelve</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option value="10">10</option>
+                  <option value="11">11</option>
+                  <option value="12">12</option>
                 </optgroup>
               </select>
             </label> 
-            <br/>
             <!-- (7) sResidency , radio -->
             <label>Residency: 
-              <input type="radio" name="sResidency" value="I"/> Intern
-              <input type="radio" name="sResidency" value="E"/> Extern
+              <input type="radio" name="sResidency" value="intern"/> Intern
+              <input type="radio" name="sResidency" value="extern"/> Extern
             </label>
-            <br/>
             <!-- (8) cPreferred , 5 item dropdown -->
             <label>Preferred Club: 
               <select id="cPreferred" name="cPreferred">
@@ -80,13 +78,16 @@
                 </optgroup>
               </select>
             </label> 
-            <br/>
+          </fieldset>
+          <br/>
+          <fieldset>
+            <legend>Why do I want to join?</legend>
             <!-- (9) cReason , textarea -->
-            <label for="cReason">Why do you want to join your preferred club?<br/>
-              <textarea id="cReason" name="cReason" rows="10" cols="50">
-              What does being in the club mean to you? What can you learn? What can you provide?
+            <label for="cReason">
+              <textarea id="cReason" name="cReason">
               </textarea>
             </label>
+          </fieldset>
             <!-- (10) Submit / reset buttons -->
             <br><br>
             <input type="submit" value="Submit"/>
@@ -104,7 +105,7 @@
        https://www.w3schools.com/html/html_forms.asp
       </cite><br/>
       <p>
-        Copyright @ AL Mendoza 
+        Copyright @ JBSAquino
       </p>
     </footer>
     <script src="script.js"></script>

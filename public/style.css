@@ -1,6 +1,8 @@
 * { 
   box-sizing: border-box;
-  font-family: arial;
+  font-family: "Bahnschrift", sans-serif;
+  text-align: center;
+  align-items: center;
 }
 input {
   background: lightgray;
@@ -9,7 +11,7 @@ input {
 }
 textarea {
   border-radius: 10px;
-  resize: none; /* values could be horizontal or vertical or auto */
+  resize: auto; /* values could be horizontal or vertical or auto */
  
 }
 fieldset {
@@ -34,4 +36,10 @@ input[type=submit], input[type=reset] {
 }
 span {
   color: maroon;
+}
+
+form {
+  line-height: 25px;
+  width: 50%;
+  margin: 0 auto;
 }
